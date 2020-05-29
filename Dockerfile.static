@@ -23,7 +23,7 @@ COPY ./conteco/configs/etc/kafka/server.properties /etc/kafka/server.properties
 ENV CONTECO_REALM="vcwebio" \
     CONTECO_ECOSYSTEM="conteco" \
     CONTECO_TYPE="kafka_rest" \
-    CONTECO_NAME="tocloud" \
+    CONTECO_NAME="sasl" \
     CONTECO_TAG="5.4.0" \
     CONTECO_BASE="external.kafka_rest:5.4.0" \
     CONTECO_BUILD="image-base"
@@ -31,11 +31,11 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
       io.vcweb.ecosystem="conteco" \
       io.vcweb.type="kafka_rest" \
-      io.vcweb.name="tocloud" \
+      io.vcweb.name="sasl" \
       io.vcweb.tag="5.4.0" \
       io.vcweb.base="external.kafka_rest:5.4.0" \
       io.vcweb.build="image-base" \
-      io.vcweb.label="kafka_rest.tocloud - ContEco" \
-      io.vcweb.description="Confluent Kafka REST to cloud image, with configuration changes." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka_rest.tocloud --help" 
+      io.vcweb.label="kafka_rest.sasl - ContEco" \
+      io.vcweb.description="Confluent Kafka REST image, with SASL authentication." \
+      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka_rest.sasl --help" 
 ##### END image.base/Dockerfile/env-labels-footer #####

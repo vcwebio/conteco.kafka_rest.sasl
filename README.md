@@ -1,6 +1,6 @@
 # `kafka_rest.tocloud` - ContEco
 
-Confluent Kafka REST to cloud image, with configuration changes.
+Confluent Kafka REST image, with SASL authentication.
 See `conteco.docs.overview` for more information on the ContEco ecosystem.
 
 ## Tags
